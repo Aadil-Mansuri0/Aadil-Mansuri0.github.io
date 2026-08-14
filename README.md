@@ -1,12 +1,14 @@
-# Aadil Mansuri — Portfolio
+# Aadil Mansuri — Engineering Portfolio
 
-Personal portfolio website for showcasing projects, technical skills and contact information.
+[![Deploy to GitHub Pages](https://github.com/Aadil-Mansuri0/Aadil-Mansuri0.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/Aadil-Mansuri0/Aadil-Mansuri0.github.io/actions/workflows/pages.yml)
 
-## 🌐 Website
+> Personal portfolio for showcasing machine learning, data engineering, backend systems and problem-solving work.
 
-This repository is intended to be served as a GitHub Pages site from the `main` branch.
+## 🚀 Live Portfolio
 
-> If the Pages URL is enabled in repository settings, the site is available at the repository's GitHub Pages URL. Keep the README link updated with the verified URL after confirming Pages is enabled.
+**Website:** https://aadil-mansuri0.github.io/
+
+The site is deployed automatically from the `main` branch using GitHub Pages.
 
 ## 🧩 Tech Stack
 
@@ -14,6 +16,7 @@ This repository is intended to be served as a GitHub Pages site from the `main` 
 - CSS3
 - JavaScript
 - GitHub Pages
+- GitHub Actions
 
 ## 📁 Structure
 
@@ -22,6 +25,7 @@ This repository is intended to be served as a GitHub Pages site from the `main` 
 ├── index.html
 ├── style.css
 ├── script.js
+├── .github/workflows/pages.yml
 └── README.md
 ```
 
@@ -33,12 +37,27 @@ python3 -m http.server 5500
 
 Open `http://127.0.0.1:5500` in your browser.
 
-## 🚀 Portfolio Goal
+## 🔄 Deployment
 
-The portfolio is the presentation layer for my flagship engineering work, including machine learning, data engineering, backend and DSA projects.
+Every push to `main` triggers the Pages workflow:
+
+```text
+Git push → GitHub Actions → Build artifact → GitHub Pages → Live portfolio
+```
+
+## 🎯 Portfolio Focus
+
+The portfolio is the presentation layer for my strongest engineering work across:
+
+- Machine Learning
+- Data Engineering
+- Backend/API development
+- Frontend development
+- Data Structures & Algorithms
 
 ## 👨‍💻 Author
 
 **Aadil Mansuri** — CSE (AI) student.
 
-[GitHub](https://github.com/Aadil-Mansuri0)
+- GitHub: https://github.com/Aadil-Mansuri0
+- Portfolio: https://aadil-mansuri0.github.io/
