@@ -3,62 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servify</title>
+    <meta name="description" content="Aadil Mansuri - CSE (AI) student focused on Data Engineering, AI/ML, Backend Engineering and full-stack project delivery.">
+    <title>Aadil Mansuri | Data Engineering, AI/ML, Backend</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body   style="background-image : url(https://img.freepik.com/premium-photo/curved-speed-lines-backdrop-abstract-backgrounds_743855-11036.jpg); color:aliceblue"></body>
-
-    <header>
-        <h1>Servify</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="#ott">Ott</a></li>
-                <li><a href="#delivery">Delivery</a></li>
-                <li><a href="#medical">Medical</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top">Aadil Mansuri</a>
+        <nav aria-label="Primary navigation">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/Aadil-Mansuri0" target="_blank" rel="noreferrer">GitHub</a>
         </nav>
     </header>
 
-    <section id="hero">
-        <h2>All-in-One Service Platform</h2>
-        <p>Stream movies, order food, and get medical help—all in one place!</p>
-    </section>
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">CSE (AI) | Data Engineering | AI/ML | Backend</p>
+                <h1 id="hero-title">Building practical data, ML and API systems with clean engineering habits.</h1>
+                <p class="lead">I am focused on recruiter-ready projects that show real implementation: data pipelines, FastAPI services, ML inference, dashboards, tests, CI and truthful deployment documentation.</p>
+                <div class="actions">
+                    <a class="button primary" href="#projects">View projects</a>
+                    <a class="button" href="https://github.com/Aadil-Mansuri0" target="_blank" rel="noreferrer">GitHub profile</a>
+                </div>
+            </div>
+            <aside class="status-panel" aria-label="Portfolio status">
+                <h2>Portfolio Focus</h2>
+                <ul>
+                    <li>Data Engineering pipelines</li>
+                    <li>ML-backed backend systems</li>
+                    <li>Streamlit analytics dashboards</li>
+                    <li>DSA interview preparation</li>
+                </ul>
+            </aside>
+        </section>
 
-    <section id="ott">
-        <h2>🎬 OTT Streaming</h2>
-        <div class="video-container">
-            <video src="WhatsApp Video 2025-02-13 at 21.16.22.mp4" width=" 5%"
-             height="5%" autoplay muted loop class="card-video"></video>>
-        </div>
-        <p>Limitless Stories,One Platform</p>
-        <button onclick="btn"><a href="https://aadil-978.github.io/index.html">Watch Now</a></button>
-    </section>
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <p class="eyebrow">Featured work</p>
+                <h2 id="projects-title">Projects</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card flagship">
+                    <div>
+                        <p class="tag">Flagship | Full-stack ML</p>
+                        <h3>CardioSense Pro</h3>
+                        <p>Heart disease risk prediction platform with browser UI, FastAPI backend, JWT authentication, SQLAlchemy persistence, per-user prediction history and a reproducible scikit-learn pipeline.</p>
+                    </div>
+                    <dl>
+                        <div><dt>Status</dt><dd>Frontend demo live; backend Docker-ready/local</dd></div>
+                        <div><dt>Stack</dt><dd>FastAPI, JWT, SQLAlchemy, scikit-learn, Docker, CI</dd></div>
+                    </dl>
+                    <div class="card-actions">
+                        <a href="projects/cardiosense/">Demo</a>
+                        <a href="https://github.com/Aadil-Mansuri0/CardioSense-Pro-Fullstack-ML" target="_blank" rel="noreferrer">Source</a>
+                    </div>
+                </article>
 
-    <section id="delivery">
-        <h2>🍔 Delivery Services</h2>
-        <div class="video-container">
-            <video src="WhatsApp Video 2025-02-13 at 21.43.42.mp4" autoplay muted loop class="card-video"></video>>
-        </div>
-        <p>Order food, groceries, and more at your convenience.</p>
-        <button onclick="orderFood()"><a href="https://sunny-gupta10666.github.io/index.html">Order Now</a></button>
-    </section>
+                <article class="project-card">
+                    <div>
+                        <p class="tag">Data Engineering</p>
+                        <h3>Retail Sales ETL</h3>
+                        <p>Python and DuckDB pipeline that ingests raw retail CSVs, cleans and validates records, performs idempotent upserts, builds warehouse tables and exports analytics marts.</p>
+                    </div>
+                    <dl>
+                        <div><dt>Status</dt><dd>Tests and CI included</dd></div>
+                        <div><dt>Stack</dt><dd>Python, Pandas, DuckDB, SQL, Pytest</dd></div>
+                    </dl>
+                    <div class="card-actions">
+                        <a href="https://github.com/Aadil-Mansuri0/retail-sales-etl" target="_blank" rel="noreferrer">Source</a>
+                    </div>
+                </article>
 
-    <section id="medical">
-        <h2>🏥 Medical Services</h2>
-        <div class="video-container">
-            <video src="WhatsApp Video 2025-02-13 at 21.34.15.mp4" width=" 30%"
-            height="30%" autoplay muted loop class="card-video"></video>>
-        </div>
-        <p>Consult with doctors online or order medicines.</p>
-        <button onclick="bookAppointment()"><a href="https://ashu-kumar9234.github.io/index.html">Book Appointment</a></button>
-    </section>
+                <article class="project-card">
+                    <div>
+                        <p class="tag">Analytics Dashboard</p>
+                        <h3>UrbanPulse</h3>
+                        <p>Streamlit smart-city dashboard with weather, AQI, flight activity, fallback data, city health scoring and interactive Plotly visualizations.</p>
+                    </div>
+                    <dl>
+                        <div><dt>Status</dt><dd>Local/demo ready; live URL pending verified deployment</dd></div>
+                        <div><dt>Stack</dt><dd>Streamlit, Plotly, Pandas, APIs, SQLite</dd></div>
+                    </dl>
+                    <div class="card-actions">
+                        <a href="https://github.com/Aadil-Mansuri0/urbanpulse-ultimate-dashboard" target="_blank" rel="noreferrer">Source</a>
+                    </div>
+                </article>
 
-    <footer id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: support@servify.com</p>
-        <p>Phone: 1800-234-234</p>
+                <article class="project-card">
+                    <div>
+                        <p class="tag">Problem Solving</p>
+                        <h3>DSA Practice</h3>
+                        <p>Interview preparation repository covering linked lists, stacks, queues, sorting and Java practice with CI checks for C++ source compilation.</p>
+                    </div>
+                    <dl>
+                        <div><dt>Status</dt><dd>Kept as practice repository</dd></div>
+                        <div><dt>Stack</dt><dd>C++, Java, GitHub Actions</dd></div>
+                    </dl>
+                    <div class="card-actions">
+                        <a href="https://github.com/Aadil-Mansuri0/DSA-Practice" target="_blank" rel="noreferrer">Source</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section split" aria-labelledby="skills-title">
+            <div>
+                <p class="eyebrow">Technical stack</p>
+                <h2 id="skills-title">Skills</h2>
+            </div>
+            <div class="skill-list" aria-label="Skills list">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Pandas</span>
+                <span>DuckDB</span>
+                <span>FastAPI</span>
+                <span>SQLAlchemy</span>
+                <span>JWT Auth</span>
+                <span>scikit-learn</span>
+                <span>Streamlit</span>
+                <span>Plotly</span>
+                <span>Docker</span>
+                <span>GitHub Actions</span>
+                <span>C++</span>
+                <span>Java</span>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact" aria-labelledby="contact-title">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Open to internships, fresher roles and project discussions.</h2>
+            <div class="actions">
+                <a class="button primary" href="https://github.com/Aadil-Mansuri0" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="button" href="https://github.com/Aadil-Mansuri0?tab=repositories" target="_blank" rel="noreferrer">Repositories</a>
+                <a class="button" href="#projects">Featured work</a>
+            </div>
+            <p class="note">Resume and professional contact links can be added here once the verified URLs are available.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built and maintained by Aadil Mansuri. Claims on this portfolio are kept truthful to the current repositories and verified demos.</p>
     </footer>
 
     <script src="script.js"></script>
