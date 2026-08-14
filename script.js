@@ -1,19 +1,12 @@
-function orderFood() {
-    alert("Redirecting to food delivery service...");
-    window.location.href = "https://www.fooddelivery.com"; 
-}
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+        const targetId = link.getAttribute("href");
+        if (!targetId || targetId === "#") return;
 
-function bookAppointment() {
-    alert("Redirecting to online doctor consultation...");
-    window.location.href = "https://www.medicalservice.com"; 
-}
+        const target = document.querySelector(targetId);
+        if (!target) return;
 
-// Smooth Scrolling for Navigation
-document.querySelectorAll("nav ul li a").forEach(link => {
-    link.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-        });
+        event.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
 });
