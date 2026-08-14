@@ -10,6 +10,10 @@
 
 The site is deployed automatically from the `main` branch using GitHub Pages.
 
+## 🌐 Hosted Project Demos
+
+- CardioSense Pro frontend: https://aadil-mansuri0.github.io/projects/cardiosense/
+
 ## 🧩 Tech Stack
 
 - HTML5
@@ -25,6 +29,9 @@ The site is deployed automatically from the `main` branch using GitHub Pages.
 ├── index.html
 ├── style.css
 ├── script.js
+├── projects/
+│   └── cardiosense/
+│       └── index.html
 ├── .github/workflows/pages.yml
 └── README.md
 ```
